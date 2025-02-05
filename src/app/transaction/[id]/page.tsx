@@ -1,4 +1,6 @@
-import { TransactionDetail } from '../../components/TransactionDetail';
+'use client';
+
+import { TransactionDetail } from '../../../components/TransactionDetail';
 import { mockData } from '../../../data/mockData';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -10,7 +12,8 @@ interface PageProps {
 }
 
 export default function TransactionDetailPage({ params }: PageProps) {
-  const transaction = mockData.transactions.find(t => t.id === params.id);
+  const id = params?.id;
+  const transaction = mockData.transactions.find(t => t.id === id);
 
   if (!transaction) {
     notFound();

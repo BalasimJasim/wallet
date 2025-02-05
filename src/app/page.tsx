@@ -1,6 +1,6 @@
-import { CardBalanceBlock } from './components/CardBalanceBlock';
-import { DailyPointsBlock } from './components/DailyPointsBlock';
-import { TransactionList } from './components/TransactionList';
+import { CardBalanceBlock } from '../components/CardBalanceBlock';
+import { DailyPointsBlock } from '../components/DailyPointsBlock';
+import { TransactionList } from '../components/TransactionList';
 import { mockData } from '../data/mockData';
 
 export default function Home() {
